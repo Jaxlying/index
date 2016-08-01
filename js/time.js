@@ -22,7 +22,6 @@ function refreshLove() {
     var loveSeconds = parseInt(tollSeconds-loveMonths*month-loveDays*day-loveHours*hour-loveMinutes*minute);
     document.getElementById('love').innerHTML = "我们相爱了"+loveMonths+"个月"+loveDays+"天"+loveHours+"小时"+loveMinutes+"分钟"+loveSeconds+"秒";
     setTimeout("refreshLove()",1000);
-    
 }
 
 
