@@ -4,8 +4,8 @@
 /**
  * 计时
  */
-refreshLove();
-function refreshLove() {
+refreshLoveTime();
+function refreshLoveTime() {
     var startTime = new Date();
     startTime.setFullYear(2016,3-1,6);
     startTime.setHours(17,27,0);
@@ -22,7 +22,7 @@ function refreshLove() {
     var loveMinutes = parseInt((tollSeconds-loveMonths*month-loveDays*day-loveHours*hour)/minute);
     var loveSeconds = parseInt(tollSeconds-loveMonths*month-loveDays*day-loveHours*hour-loveMinutes*minute);
     $('.love').text("我们相爱了"+loveMonths+"个月"+loveDays+"天"+loveHours+"小时"+loveMinutes+"分钟"+loveSeconds+"秒");
-    setTimeout("refreshLove()",1000);
+    setTimeout("refreshLoveTime()",1000);
 }
 
 
